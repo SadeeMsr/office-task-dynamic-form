@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export default function UserInputForm({instruction, handleForm}) {
+export default function UserInstructionForm({instruction, handleForm}) {
   return (
     <div className="shadow flex flex-col gap-5 mb-5 border w-full p-10">
       <h1 className="font-bold text-xl">Field Generation Instruction</h1>
