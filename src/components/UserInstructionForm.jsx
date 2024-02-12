@@ -8,8 +8,9 @@ export default function UserInstructionForm({instruction, handleForm}) {
         className="bg-transparent h-10 ps-5 bg-slate-100 border-2 rounded outline-none"
         type="number"
         placeholder="Type number of fields"
-        defaultValue={instruction.numOfFields}
+        defaultValue={instruction?.numOfFields}
         onChange={handleForm}
+        min="0"
       />
      
       <input
@@ -17,8 +18,9 @@ export default function UserInstructionForm({instruction, handleForm}) {
         className="bg-transparent h-10 ps-5 bg-slate-100 border-2 rounded outline-none"
         type="number"
         placeholder="Type password field position number"
-        defaultValue={instruction.nameFieldPause}
+        defaultValue={instruction?.nameFieldPause}
         onChange={handleForm}
+        min="0"
       />
     </div>
   );
